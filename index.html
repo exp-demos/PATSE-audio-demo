@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PATSE Audio Demo</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Arial; max-width: 860px; margin: 40px auto; padding: 0 16px; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 16px; margin: 12px 0; }
+    h1 { margin: 0 0 12px; }
+    .meta { color: #666; font-size: 14px; margin: 6px 0 10px; }
+    audio { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>PATSE Audio Demo</h1>
+  <p class="meta">（把音频文件放到 <code>audio/</code> 目录后，在这里引用。）</p>
+
+  <div class="card">
+    <div class="meta">Demo 1</div>
+    <audio controls preload="metadata">
+      <source src="audio/demo1.mp3" type="audio/mpeg">
+      你的浏览器不支持 audio 标签。
+    </audio>
+  </div>
+
+  <div class="card">
+    <div class="meta">Demo 2</div>
+    <audio controls preload="metadata">
+      <source src="audio/demo2.wav" type="audio/wav">
+    </audio>
+  </div>
+
+</body>
+</html>
