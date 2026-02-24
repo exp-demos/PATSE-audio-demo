@@ -83,11 +83,7 @@
     <h2>Abstract</h2>
     <div class="abstract-box">
       <p>
-      In long-form multi-party conversations, highly imbalanced speaker activity and frequent overlap make it difficult to identify “who spoke when and what”. 
-Sliding-window continuous speech separation (CSS) mitigates sparse supervision, but often suffers from cross-window speaker inconsistency and residual crosstalk, which in practice requires diarization for reliable speaker attribution. 
-Motivated by the stability of speaker directions of arrival (DOAs) in meetings, we propose PATSE, a multi-channel position-aware target speaker extraction front-end that uses DOA as an explicit spatial prior to directly extract speech of each target speaker. 
-PATSE combines a DOA-guided spatial encoder with FiLM-based conditioning to produce speaker-attributed streams, from which speaker activity can be obtained via simple post-processing (e.g., VAD) without explicit diarization. % 我这里简单归纳了你的结构 我认为这是你论文比较创新的部分 需要简单阐述一下
-Experiments on both replayed and real conversations show consistent ASR gains outperforming CSS and diarization-based pipelines.
+      In long-form multi-party conversations, highly imbalanced speaker activity and frequent overlap make it difficult to identify “who spoke when and what”. Sliding-window continuous speech separation (CSS) mitigates sparse supervision, but often suffers from cross-window speaker inconsistency and residual crosstalk, which in practice requires diarization for reliable speaker attribution. Motivated by the stability of speaker directions of arrival (DOAs) in meetings, we propose PATSE, a multi-channel position-aware target speaker extraction front-end that uses DOA as an explicit spatial prior to directly extract speech of each target speaker. PATSE combines a DOA-guided spatial encoder with FiLM-based conditioning to produce speaker-attributed streams, from which speaker activity can be obtained via simple post-processing (e.g., VAD) without explicit diarization. Experiments on both replayed and real conversations show consistent ASR gains outperforming CSS and diarization-based pipelines.
       </p>
     </div>
   </div>
