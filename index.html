@@ -3,29 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PATSE Audio Demo</title>
+  <title>Position-Aware Target Speaker Extraction for Long-Form Multi-Party Conversations</title>
+
   <style>
     body { 
       font-family: system-ui, -apple-system, Arial; 
-      max-width: 900px; 
+      max-width: 1000px; 
       margin: 40px auto; 
-      padding: 0 16px; 
+      padding: 0 20px; 
+      line-height: 1.6;
     }
 
-    .card { 
-      border: 1px solid #eee; 
-      border-radius: 12px; 
-      padding: 18px; 
-      margin: 24px 0; 
-    }
-
-    h1 { margin-bottom: 10px; }
+    h1 { margin-bottom: 6px; }
     h2 { margin-top: 0; }
 
     .meta { 
       color: #666; 
       font-size: 14px; 
-      margin-bottom: 18px; 
+      margin-bottom: 24px; 
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .card { 
+      border: 1px solid #eee; 
+      border-radius: 12px; 
+      padding: 20px; 
+      margin: 24px 0; 
+    }
+
+    .original-box {
+      background: #fafafa;
+      border: 1px solid #ddd;
     }
 
     audio { 
@@ -33,65 +44,101 @@
       margin-bottom: 14px; 
     }
 
-    .original-box {
-      background: #fafafa;
+    .abstract-box {
+      background: #f8f9fb;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #e3e6ea;
+      text-align: justify;
+    }
+
+    .figure-box {
+      text-align: center;
+    }
+
+    .figure-box img {
+      max-width: 100%;
+      border-radius: 12px;
       border: 1px solid #ddd;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>PATSE Audio Demo</h1>
-  <p class="meta">Same original demo, five different methods</p>
+  <h1>Position-Aware Target Speaker Extraction for Long-Form Multi-Party Conversations</h1>
+  <p class="meta">
+    A Diarization-Free Framework for ASR
+  </p>
 
-  <!-- Original Audio (只出现一次) -->
-  <div class="card original-box">
-    <h2>Original Audio</h2>
-    <audio controls preload="metadata">
-      <source src="original.wav" type="audio/wav">
-    </audio>
+  <!-- Abstract -->
+  <div class="section">
+    <h2>Abstract</h2>
+    <div class="abstract-box">
+      <p>
+        We propose a Position-Aware Target Speaker Extraction (PATSE) framework 
+        for long-form multi-party conversations. Unlike conventional approaches 
+        that rely on explicit speaker diarization, our method directly extracts 
+        the target speaker’s speech conditioned on positional cues, enabling 
+        robust and efficient ASR in complex conversational scenarios. 
+        Experimental results demonstrate significant improvements in 
+        transcription accuracy while simplifying the processing pipeline.
+      </p>
+    </div>
   </div>
 
-  <!-- Method 1 -->
-  <div class="card">
-    <h2>Method 1</h2>
-
-    <p><strong>Speaker A</strong></p>
-    <audio controls preload="metadata">
-      <source src="method1_A.wav" type="audio/wav">
-    </audio>
-
-    <p><strong>Speaker B</strong></p>
-    <audio controls preload="metadata">
-      <source src="method1_B.wav" type="audio/wav">
-    </audio>
-
-    <p><strong>Speaker C</strong></p>
-    <audio controls preload="metadata">
-      <source src="method1_C.wav" type="audio/wav">
-    </audio>
+  <!-- Model Figure -->
+  <div class="section">
+    <h2>Model Architecture</h2>
+    <div class="figure-box">
+      <!-- 替换为你的模型图文件名 -->
+      <img src="model_architecture.png" alt="Model Architecture Diagram">
+      <div class="caption">
+        Figure 1. Overview of the proposed PATSE framework.
+      </div>
+    </div>
   </div>
 
-  <!-- Method 2 -->
-  <div class="card">
-    <h2>Method 2</h2>
-    <!-- method2 音频 -->
-  </div>
+  <!-- Audio Demo Section -->
+  <div class="section">
+    <h2>Audio Demo</h2>
+    <p class="meta">Same original demo, five different methods</p>
 
-  <!-- Method 3 -->
-  <div class="card">
-    <h2>Method 3</h2>
-  </div>
+    <!-- Original Audio -->
+    <div class="card original-box">
+      <h3>Original Audio</h3>
+      <audio controls preload="metadata">
+        <source src="original.wav" type="audio/wav">
+      </audio>
+    </div>
 
-  <!-- Method 4 -->
-  <div class="card">
-    <h2>Method 4</h2>
-  </div>
+    <!-- Method 1 -->
+    <div class="card">
+      <h3>Method 1</h3>
 
-  <!-- Method 5 -->
-  <div class="card">
-    <h2>Method 5</h2>
+      <p><strong>Speaker A</strong></p>
+      <audio controls preload="metadata">
+        <source src="method1_A.wav" type="audio/wav">
+      </audio>
+
+      <p><strong>Speaker B</strong></p>
+      <audio controls preload="metadata">
+        <source src="method1_B.wav" type="audio/wav">
+      </audio>
+
+      <p><strong>Speaker C</strong></p>
+      <audio controls preload="metadata">
+        <source src="method1_C.wav" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- 继续添加 Method 2-5 -->
   </div>
 
 </body>
