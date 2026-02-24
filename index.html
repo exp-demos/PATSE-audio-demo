@@ -7,35 +7,55 @@
   <style>
     body { 
       font-family: system-ui, -apple-system, Arial; 
-      max-width: 860px; 
+      max-width: 900px; 
       margin: 40px auto; 
       padding: 0 16px; 
     }
+
     .card { 
       border: 1px solid #eee; 
       border-radius: 12px; 
-      padding: 16px; 
-      margin: 20px 0; 
+      padding: 18px; 
+      margin: 24px 0; 
     }
-    h1 { margin-bottom: 24px; }
+
+    h1 { margin-bottom: 10px; }
     h2 { margin-top: 0; }
-    .meta { color: #666; font-size: 14px; margin: 6px 0 14px; }
-    audio { width: 100%; margin-bottom: 12px; }
+
+    .meta { 
+      color: #666; 
+      font-size: 14px; 
+      margin-bottom: 18px; 
+    }
+
+    audio { 
+      width: 100%; 
+      margin-bottom: 14px; 
+    }
+
+    .original-box {
+      background: #fafafa;
+      border: 1px solid #ddd;
+    }
   </style>
 </head>
 
 <body>
+
   <h1>PATSE Audio Demo</h1>
-  <p class="meta">Same demo, five different methods</p>
+  <p class="meta">Same original demo, five different methods</p>
+
+  <!-- Original Audio (只出现一次) -->
+  <div class="card original-box">
+    <h2>Original Audio</h2>
+    <audio controls preload="metadata">
+      <source src="original.wav" type="audio/wav">
+    </audio>
+  </div>
 
   <!-- Method 1 -->
   <div class="card">
     <h2>Method 1</h2>
-
-    <p><strong>Original Audio</strong></p>
-    <audio controls preload="metadata">
-      <source src="method1_original.wav" type="audio/wav">
-    </audio>
 
     <p><strong>Speaker A</strong></p>
     <audio controls preload="metadata">
@@ -56,7 +76,7 @@
   <!-- Method 2 -->
   <div class="card">
     <h2>Method 2</h2>
-    <!-- 替换成对应音频文件 -->
+    <!-- method2 音频 -->
   </div>
 
   <!-- Method 3 -->
