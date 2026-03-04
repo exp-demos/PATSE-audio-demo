@@ -83,7 +83,7 @@
     <h2>Abstract</h2>
     <div class="abstract-box">
       <p>
-      In long-form multi-party conversations, highly imbalanced speaker activity and frequent overlap make it difficult to identify “who spoke when and what”. Sliding-window continuous speech separation (CSS) mitigates sparse supervision, but often suffers from cross-window speaker inconsistency and residual crosstalk, which in practice requires diarization for reliable speaker attribution. Motivated by the stability of speaker directions of arrival (DOAs) in meetings, we propose PATSE, a multi-channel position-aware target speaker extraction front-end that uses DOA as an explicit spatial prior to directly extract speech of each target speaker. PATSE combines a DOA-guided spatial encoder with FiLM-based conditioning to produce speaker-attributed streams, from which speaker activity can be obtained via simple post-processing (e.g., VAD) without explicit diarization. Experiments on both replayed and real conversations show consistent ASR gains outperforming CSS and diarization-based pipelines.
+      In long-form multi-party conversations, highly imbalanced speaker activity and frequent overlap make it difficult to identify “who spoke when and what”. Sliding-window continuous speech separation (CSS) mitigates sparse supervision, but often suffers from cross-window speaker inconsistency and residual crosstalk, which in practice requires diarization for reliable speaker attribution. Motivated by the stability of speakers' directions of arrival (DOAs) in meetings, we propose PATSE, a multi-channel Position-Aware Target Speaker Extraction front-end that uses DOA as a spatial prior to directly extract the speech of each target speaker. PATSE combines a DOA-guided spatial encoder and conditioner to generate speaker-attributed streams, from which speaker activity can be inferred via simple post-processing (e.g., VAD) without explicit diarization. Experiments on both replayed and real conversations show consistent ASR gains outperforming CSS and diarization-based pipelines.
       </p>
     </div>
   </div>
@@ -101,7 +101,7 @@
 
   <!-- Audio Demo -->
   <div class="section">
-    <h2>Audio Demo</h2>
+    <h2>TEIDAN Audio Demo (Real-World Conversation)</h2>
 
     <div class="card original-box">
       <h3>Original Audio</h3>
